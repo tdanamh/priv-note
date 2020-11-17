@@ -33,7 +33,7 @@ router.get('/view/:id', function(req, res, next) {
     var id = req.params["id"];
   dbo.collection("messages").findOne({"_id" : ObjectId(id)}, function(err, result) {
     if (!result) {
-      res.send("Citita");
+      res.send("Your note has been read");
     } else {
       res.send(result.message);
     }

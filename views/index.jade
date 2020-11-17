@@ -2,11 +2,12 @@ extends layout
 
 block content
 
-  h1= title
-  p Welcome to #{title}
+  div(id="main-div")
+    h1= title
+    p Welcome to #{title}
 
-  span(id="note")
+    span(id="note")
 
-  form#create-new-note(action="hehe")
-    input(type="text" placeholder="Type your secret...")
-    input(type="submit")
+    form#create-new-note(action="hehe")
+      input(type="text" placeholder="Type your secret...")
+      input(type="submit")
