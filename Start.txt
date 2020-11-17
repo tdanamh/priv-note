@@ -1,0 +1,9 @@
+Commands
+
+DEBUG=privnote:* npm start
+
+Database
+mydb
+
+Collection
+messages
